@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+Gerenciador de Tarefas - React
+Sistema de gerenciamento de tarefas desenvolvido em React.js.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sobre o Projeto
+Aplicação web para gerenciar tarefas do dia a dia, permitindo adicionar, marcar como concluída e filtrar tarefas por status.
+Desenvolvido por: Taniela
+Tecnologia: React.js
+Ano: 2025
 
-## Available Scripts
+Funcionalidades
+Adicionar novas tarefas
+Marcar tarefas como concluídas
+Filtrar tarefas por status (Todas, Pendentes, Concluídas)
+Visualizar progresso em tempo real
+Design responsivo
 
-In the project directory, you can run:
 
-### `npm start`
+Tecnologias Utilizadas
+React.js - Biblioteca JavaScript
+JavaScript (ES6+) - Linguagem de programação
+CSS3 - Estilização
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Hooks do React Utilizados
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+useState - Gerenciamento de estado local
+useContext - Acesso ao contexto global
+useReducer - Gerenciamento de estado complexo
+createContext - Criação do contexto
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Estrutura de Arquivos
+src/
+├── components/
+│   ├── Tarefa.js              # Componente individual de tarefa
+│   └── ListaDeTarefas.js      # Lista de tarefas com filtros
+├── context/
+│   └── TarefasContext.js      # Estado global da aplicação
+├── App.js                      # Componente principal
+├── App.css                     # Estilos e animações
+└── index.js                    # Entrada da aplicação
 
-### `npm run build`
+Como Executar
+Pré-requisitos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Node.js instalado
+npm ou yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Instalação
+bash# Instalar dependências
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# ou
+yarn
+Executar o projeto
+bash# Iniciar servidor de desenvolvimento
+npm start
 
-### `npm run eject`
+# ou
+yarn start
+O projeto abrirá automaticamente em http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Como Usar
+Adicionar Tarefa: Digite no campo de texto e clique em "Adicionar"
+Marcar como Concluída: Clique no checkbox ao lado da tarefa
+Filtrar: Use os botões "Todas", "Pendentes" ou "Concluídas"
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Conceitos Aplicados
+Gerencia as ações de adicionar tarefa, alternar status e definir filtro.
+Componentização
+Divisão da aplicação em 3 componentes principais:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+App - Componente principal
+ListaDeTarefas - Gerencia a lista e filtros
+Tarefa - Representa cada tarefa individual
 
-## Learn More
+  Requisitos Atendidos
+ Campo de entrada para adicionar tarefas
+ Botão para adicionar tarefas
+ Lista de tarefas na tela
+ Checkbox para marcar como concluída
+ Filtros por status (Todas, Concluídas, Pendentes)
+ Estado global com useContext e useReducer
+ Mínimo de 3 componentes
+ Atualização imutável do estado
+ Event listeners (onClick, onChange, onSubmit)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  Design
+Paleta de cores: Tons laranjas pastéis (#FB923C, #FDBA74, #FFEDD5)
+Gradientes CSS
+Animações suaves
+Layout responsivo
+Efeitos hover
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  Licença
+Projeto desenvolvido para fins acadêmicos.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👨‍💻 Autor
+Taniela
+Projeto de React.js - 2025
